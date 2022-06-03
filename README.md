@@ -26,4 +26,6 @@ yarn generate \
 Optional flags:
 `--misc:enterprise` - set as `true` if you are developing a package as a VSF Core team and it will be enterprise one.
 
+Project will be generated in the `<PAYMENT_TAG>-<ECOMMERCE_TAG>-integration` directory.
+
 After generating, check your package name - by default it equals `@vsf-enterprise/<PAYMENT_TAG>-<ECOMMERCE_TAG>`. In terms of dependencies, the tool assumes eCommerce integration you are using is also from `@vsf-enterprise` scope. Updat names of packages if you need to. Organization option (?)
