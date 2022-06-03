@@ -1,0 +1,15 @@
+{
+  "name": "payment-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:vuestorefront/payment-template.git",
+  "author": "Fifciu <fjedrasik@vuestorefront.io>",
+  "license": "MIT",
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "devDependencies": {
+    "@vue-storefront/theme-utilities": "^0.1.8",
+    "fs-extra": "^10.1.0"
+  }
+}

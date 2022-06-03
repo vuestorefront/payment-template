@@ -1,0 +1,14 @@
+{
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "message": "Release version: %s",
+      "conventionalCommits": true
+    }
+  },
+  "packages": [
+    "packages/<%= ECOMMERCE_TAG %>"
+  ],
+  "version": "1.0.0"
+}

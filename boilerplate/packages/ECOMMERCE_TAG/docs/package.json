@@ -1,0 +1,13 @@
+{
+  "name": "@vsf-enterprise/<%= PAYMENT_TAG %>-<%= ECOMMERCE_TAG %>-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "latest"
+  }
+}

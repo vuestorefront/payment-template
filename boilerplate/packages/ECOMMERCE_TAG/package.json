@@ -1,0 +1,52 @@
+{
+  "name": "@vsf-enterprise/<%= PAYMENT_TAG %>-<%= ECOMMERCE_TAG %>",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "server": "server/index.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --passWithNoTests",
+    "prepublish": "yarn build"
+  },
+  "license": "VSFEL",
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.29.3",
+    "@vsf-enterprise/<%= ECOMMERCE_TAG %>": "~1.4.0",
+    "@vue-storefront/core": "^2.6.0",
+    "axios": "^0.25.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-alias": "^3.1.1",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@rollup/plugin-replace": "^2.3.4",
+    "@types/express": "^4.17.13",
+    "@vue/cli-plugin-babel": "^4.5.10",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "minimist": "^1.2.5",
+    "rollup": "^2.36.1",
+    "rollup-plugin-vue": "^5.1.9"
+  },
+  "peerDependencies": {
+    "vue": "*"
+  },
+  "files": [
+    "lib/**/*",
+    "server/**/*",
+    "nuxt/**/*",
+    "src/components/**.vue"
+  ],
+  <%_ if (MISC_ENTERPRISE) { _%>
+  "publishConfig": {
+    "registry": "https://registrynpm.storefrontcloud.io"
+  }
+  <%_ } _%>
+}
