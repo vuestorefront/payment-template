@@ -28,4 +28,4 @@ Optional flags:
 
 Project will be generated in the `<PAYMENT_TAG>-<ECOMMERCE_TAG>-integration` directory.
 
-After generating, check your package name - by default it equals `@vsf-enterprise/<PAYMENT_TAG>-<ECOMMERCE_TAG>`. In terms of dependencies, the tool assumes eCommerce integration you are using is also from `@vsf-enterprise` scope. Updat names of packages if you need to. Organization option (?)
+After generating, check your package name - by default it equals `@vsf-enterprise/<PAYMENT_TAG>-<ECOMMERCE_TAG>`. In terms of dependencies, the tool assumes eCommerce integration you are using is also inside `@vsf-enterprise` scope. Update names of packages if you need to.
