@@ -114,6 +114,8 @@ const getFlagAndVerify = (flag, exampleValues, defaultValue) => {
         console.log(err);
         return;
       }
+    } else {
+      logRed(`Provide ID Code for Google Analytics in "GTM_TAG" const inside "${finalProjectDirectory}/packages/${ecommerceTag}/docs/src/.vuepress/config.js" file.`);
     }
 
     logGreen(`Project succesfully generated in "${finalProjectDirectory}" directory.`);
