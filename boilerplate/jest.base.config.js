@@ -1,13 +1,17 @@
-// For a detailed explanation regarding each configuration property, visit:
-// https://jestjs.io/docs/en/configuration.html
-
 module.exports = {
   transform: {
-    '^.+\\.[jt]s$': 'ts-jest'
+    '^.+\\.(ts)$': 'ts-jest'
   },
   coverageDirectory: './coverage/',
   collectCoverageFrom: [
     'src/**/*.ts'
+  ],
+  collectCoverage: true,
+  coverageReporters: ['html', 'lcov', 'text'],
+  rootDir: __dirname,
+  watchPathIgnorePatterns: ['/node_modules/'],
+  setupFilesAfterEnv: [
+    './__tests__/setup.ts'
   ],
   testMatch: ['<rootDir>/**/__tests__/**/*spec.[jt]s?(x)']
 };
