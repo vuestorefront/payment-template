@@ -12,7 +12,6 @@
     "test": "jest --passWithNoTests",
     "prepublish": "yarn build"
   },
-  "license": "VSFEL",
   "dependencies": {
     "@nuxtjs/composition-api": "^0.29.3",
     "@vsf-enterprise/<%= ECOMMERCE_TAG %>": "~1.4.0",
@@ -45,6 +44,7 @@
     "src/components/**.vue"
   ],
   <%_ if (MISC_ENTERPRISE) { _%>
+  "license": "VSFEL",
   "publishConfig": {
     "registry": "https://registrynpm.storefrontcloud.io"
   }

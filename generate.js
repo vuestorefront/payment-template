@@ -68,8 +68,9 @@ const getFlagAndVerify = (flag, exampleValues, defaultValue) => {
     }
 
     const finalProjectDirectory = projectDirectory.replace('temp-', '');
+    const tuConfigName = `${paymentTag}-${ecommerceTag}-integration.config.js`;
     try {
-      fs.writeFileSync(`${paymentTag}-${ecommerceTag}-integration.config.js`, `module.exports = {
+      fs.writeFileSync(tuConfigName, `module.exports = {
           copy: {
             parseAllExtensions: true,
             to: '${finalProjectDirectory}',
@@ -94,9 +95,9 @@ const getFlagAndVerify = (flag, exampleValues, defaultValue) => {
           }
         }`);
 
-      execSync(`yarn vsf-tu --config ${paymentTag}-${ecommerceTag}-integration.config.js`, { stdio: 'inherit' });
+      execSync(`yarn vsf-tu --config ${tuConfigName}`, { stdio: 'inherit' });
       fs.rmSync(projectDirectory, { recursive: true, force: true });
-      fs.rmSync(`${paymentTag}-${ecommerceTag}-integration.config.js`, { force: true });
+      fs.rmSync(tuConfigName, { force: true });
 
     } catch (err) {
       logRed(`Error durring compiling templates:`);
