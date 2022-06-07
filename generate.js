@@ -7,7 +7,7 @@ const logGreen = (message) => console.log("\x1b[32m%s\x1b[0m", message);
 const logRed = (message) => console.log("\x1b[31m%s\x1b[0m", message);
 
 const getFlagAndVerify = (flag, exampleValues, defaultValue) => {
-  const flagsValue = getFlagValue(flag);
+  const flagsValue = getFlagValue(flag).trim();
 
   if (!flagsValue || !flagsValue.trim() || flagsValue.startsWith('--')) {
     if (defaultValue !== undefined) {
