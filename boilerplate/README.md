@@ -31,7 +31,7 @@ Currently, it works only for <%= ECOMMERCE_NAME %>.
 yarn add @vsf-enterprise/<%= PAYMENT_TAG %>-<%= ECOMMERCE_TAG %>
 ```
 
-Then follow [document](https://docs.vuestorefront.io/<%= PAYMENT_TAG %>/guide/installation.html#setup) describing basic setup of the integration.
+Then follow [document](https://docs.vuestorefront.io/<%= PAYMENT_TAG %>/<%= ECOMMERCE_TAG %>/guide/installation.html#setup) describing basic setup of the integration.
 
 ### Requirements
 

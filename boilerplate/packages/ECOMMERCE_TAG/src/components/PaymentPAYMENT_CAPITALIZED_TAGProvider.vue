@@ -51,7 +51,7 @@ export default {
   setup(props, { root: { $route: { query } }}) {
     const isMalformed = ref(false);
     const isLoading = ref(true);
-    const { createOrder, error } = use<%= PAYMENT_CAPITALIZED_TAG %>();
+    const { exampleEndpoint, error } = use<%= PAYMENT_CAPITALIZED_TAG %>();
     const { load: loadCart, setCart } = useCart();
     const route = useRoute();
 

@@ -98,7 +98,7 @@ Add `Payment<%= PAYMENT_CAPITALIZED_TAG %>Provider.vue` components to the last s
 </template>
 
 <script>
-import Payment<%= PAYMENT_CAPITALIZED_TAG %>Provider from '@vsf-enterprise/<%= PAYMENT_TAG %>-commercetools/src/components/Payment<%= PAYMENT_CAPITALIZED_TAG %>Provider';
+import Payment<%= PAYMENT_CAPITALIZED_TAG %>Provider from '@vsf-enterprise/<%= PAYMENT_TAG %>-<%= ECOMMERCE_TAG %>/src/components/Payment<%= PAYMENT_CAPITALIZED_TAG %>Provider';
 
 export default {
   components: {
@@ -142,7 +142,7 @@ In <%= PAYMENT_NAME %>'s dashboard, add a webhook with the following configurati
 
 * Webhook URL: `https://<your_vsf2_app_domain>/api/<%= PAYMENT_TAG %>/webhook`,
 
-TODO: Add detials
+TODO: Add details
 
 ## Testing webhook locally
 

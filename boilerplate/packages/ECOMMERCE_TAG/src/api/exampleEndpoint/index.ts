@@ -1,5 +1,6 @@
 import { Logger } from '@vue-storefront/core';
 import { LOGGER_PREFIX } from '../../consts';
+import { <%= PAYMENT_CAPITALIZED_TAG %>IntegrationContext } from '../../types';
 
 const exampleEndpoint = async (
   context: <%= PAYMENT_CAPITALIZED_TAG %>IntegrationContext, 

@@ -56,6 +56,9 @@ const getFlagAndVerify = (flag, exampleValues, defaultValue) => {
       const vueComponentPath = `${projectDirectory}/packages/${ecommerceTag}/src/components/PaymentPAYMENT_CAPITALIZED_TAGProvider.vue`;
       fs.renameSync(vueComponentPath, vueComponentPath.replace('PAYMENT_CAPITALIZED_TAG', paymentCapitalizedTag));
 
+      const vueComponentLoaderPath = `${projectDirectory}/packages/${ecommerceTag}/src/components/PaymentPAYMENT_CAPITALIZED_TAGLoader.vue`;
+      fs.renameSync(vueComponentLoaderPath, vueComponentLoaderPath.replace('PAYMENT_CAPITALIZED_TAG', paymentCapitalizedTag));
+
       const composablePath = `${projectDirectory}/packages/${ecommerceTag}/src/composables/usePAYMENT_CAPITALIZED_TAG`;
       fs.renameSync(composablePath, composablePath.replace('PAYMENT_CAPITALIZED_TAG', paymentCapitalizedTag));
 

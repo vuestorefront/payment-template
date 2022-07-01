@@ -21,12 +21,11 @@ const use<%= PAYMENT_CAPITALIZED_TAG %> = () => {
   const exampleEndpoint = async (/** TODO */): Promise<any> => {
     try {
       error.value.exampleEndpoint = null;
+      loading.value = true;
 
       await loadCart();
       const response = await api.SOME_METHOD();
       paymentObject.value = response;
-
-      loading.value = true;
     } catch (err) {
       Logger.error(`${LOGGER_PREFIX} ${err.message}`)
       error.value.exampleEndpoint = _getError(err);
