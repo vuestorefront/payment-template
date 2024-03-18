@@ -1,6 +1,6 @@
 # Payment Boilerplate
 
-This tool allows generating projects for your VSF2 x eCommerce x Payment Service Provider integration fastly. The output is a perfect starting point for maintaining a Payment Service Provider integration.
+This tool allows generating projects for your Alokai x eCommerce x Payment Service Provider integration fastly. The output is a perfect starting point for maintaining a Payment Service Provider integration.
 
 ## How to install
 
@@ -24,7 +24,7 @@ yarn generate \
 ```
 
 Optional flags:
-`--misc:enterprise` - set as `true` if you are developing a package as a VSF Core team and it will be enterprise one.
+`--misc:enterprise` - set as `true` if you are developing a package as an Alokai Core team and it will be enterprise one.
 
 Project will be generated in the `<PAYMENT_TAG>-<ECOMMERCE_TAG>-integration` directory.
 

@@ -18,10 +18,10 @@
 
 3. Find `TODO` occurences in the repository and apply these things.
 
-## Vue Storefront 2 integration with <%= PAYMENT_NAME %>
+## Alokai integration with <%= PAYMENT_NAME %>
 
-This project is an <%= PAYMENT_NAME %> integration for Vue Storefront 2.
-This integration is developed by Vue Storefront Core Team.
+This project is an <%= PAYMENT_NAME %> integration for Alokai.
+This integration is developed by Alokai Core Team.
 
 Currently, it works only for <%= ECOMMERCE_NAME %>.
 
@@ -43,7 +43,7 @@ Then follow [document](https://docs.vuestorefront.io/<%= PAYMENT_TAG %>/<%= ECOM
 
 1. Create a wrapper directory called `<%= PAYMENT_TAG %>-workspace` and go inside.
 2. Clone [<%= PAYMENT_NAME %> repository](https://github.com/vuestorefront/<%= PAYMENT_TAG %>) to `<%= PAYMENT_TAG %>` directory.
-3. Generate theme via [enterprise-theme](https://github.com/vuestorefront/enterprise-theme) or `VSF CLI` and put generated theme in `theme` directory.
+3. Generate theme via [enterprise-theme](https://github.com/vuestorefront/enterprise-theme) or `Alokai CLI` and put generated theme in `theme` directory.
 4. Install dependencies inside `<%= PAYMENT_TAG %>` directory via `yarn` command.
 5. Go to the `theme` directory and run these commands:
 
